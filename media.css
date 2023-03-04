@@ -1,0 +1,40 @@
+@media screen and (max-width: 400px) {
+    .container{
+        display: block;
+    }    
+
+    body{
+        margin: 0;
+    }
+        
+    .left-content{
+        width: 375px;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .score-p{
+        margin-top: 2rem;
+    }
+
+    .number{
+        font-weight: 700;
+        font-size: 4rem;
+    }
+
+    .great{
+        color: var(--white);
+        font-size: var(--font-h2);
+        font-weight: 700;
+    }
+
+    .left-content p{
+        max-width: 255px;
+        margin: 0 auto;
+        color: var(--light-lavender);
+    }
+
+    .right-content{
+        width: 100%;
+        box-shadow: none;
+    }
+}

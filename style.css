@@ -1,0 +1,214 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)
+
+### Notes
+
+Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 18px
+
+### Font
+
+font-family: 'Hanken Grotesk', sans-serif;
+
+- Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
+- Weights: 500, 700, 800 */
+
+
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    --light-slate: hsl(252, 100%, 67%);
+    --light-royal: hsl(241, 81%, 54%);
+    --font-p: 1.1rem;
+    --font-p2: 1.3rem;
+    --font-h: 2rem;
+    --font-h2: 2.5rem;
+    --font-fam: 'Hanken Grotesk', sans-serif;
+   
+}
+
+body{
+    margin: 5rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    font-family: var(--font-fam);
+}
+
+.left-content{
+    background-image: linear-gradient(to bottom, var(--light-slate), var(--light-royal));
+    width: 400px;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.left-content h2{
+    padding: 2rem 0;
+    color: var(--light-lavender);
+}
+
+.score-result{
+    background-image: linear-gradient(to top,hsla(241, 72%, 46%) , hsla(256, 72%, 46%, 1));
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.score-p{
+    margin-top: 2rem;
+}
+
+.number{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.great{
+    color: var(--white);
+    font-size: var(--font-h2);
+    font-weight: 700;
+}
+
+.left-content p{
+    max-width: 225px;
+    margin: 0 auto;
+    padding: 1rem 0 2rem 0;
+    color: var(--light-lavender);
+}
+
+.right-content{
+    width: 500px;
+    padding: 2rem;
+    box-shadow: 7px 7px 13px -4px rgba(0,0,0,0.45);
+    border-radius: 0 30px 30px 0;
+    height: 100%;
+}
+
+.right-content h2{
+    color: var(--dark-gray-blue);
+    margin-bottom: 2rem;
+}
+
+.right-number{
+    font-weight: 600;
+    color: var(--dark-gray-blue);
+}
+
+.one-hundred{
+    color: var(--light-slate);
+}
+
+.sub-summary{
+    display: flex;
+    gap: 1rem;
+    font-size: var(--font-p);
+}
+
+.summary1, .summary2, .summary3, .summary4{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.summary1{
+    background-color: var(--pale-blue);
+}
+
+.summary2{
+    background-color: var(--pale-blue);
+}
+
+.summary3{
+    background-color: var(--pale-blue);
+}
+
+.summary4{
+    background-color: var(--pale-blue);
+}
+
+.reaction{
+    color: var(--light-red);
+}
+
+.memory{
+    color: var(--orange-yellow);
+}
+
+.verbal{
+    color: var(--green-teal);
+}
+
+.visual{
+    color: var(--dark-gray-blue);
+}
+
+.continue{
+    margin-top: 1rem;
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background-color: var(--dark-gray-blue);
+    cursor: pointer;
+    font-size: var(--font-p2);
+}
+
+.continue:hover{
+    background:linear-gradient(to top,hsla(241, 72%, 46%) , hsla(256, 72%, 46%, 1));
+}
